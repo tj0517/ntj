@@ -10,7 +10,7 @@ export function Footer() {
       {/* Top Section - 4 Column Grid */}
       <div className="relative overflow-clip max-w-7xl mx-auto px-6 py-16">
               <div 
-  className="absolute top-0 right-1/2 translate-x-1/2  -translate-y-8/12   w-125 h-100 bg-linear-to-r from-blue-600/80 to-cyan-400/80 blur-[150px]  pointer-events-none"
+  className="absolute top-0 right-1/2 translate-x-1/2  -translate-y-8/12   w-125 h-100 bg-gradient-to-r from-blue-600/80 to-cyan-400/80 blur-[150px]  pointer-events-none"
   style={{ 
     borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' 
   }}
@@ -22,7 +22,7 @@ export function Footer() {
               <a href="#" className="flex items-center group">
           <div className="font-sans font-bold text-white text-4xl tracking-tighter flex items-end">
             TJ
-            <span className="w-2.5 h-2.5 rounded-full bg-linear-to-r from-blue-600 to-cyan-400 mb-1 ml-1.5 animate-pulse"></span>
+            <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 mb-1 ml-1.5 animate-pulse"></span>
           </div>
         </a>
             </div>

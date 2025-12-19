@@ -25,7 +25,7 @@ export default function Hero({tile, color='bg-blue-600/40'}: HeroProps) {
         // Jeśli indeks jest nieparzysty (1, 3...), to znaczy, że był w gwiazdkach
         if (index % 2 === 1) {
           return (
-            <span key={index} className="text-transparent bg-clip-text bg-linear-to-r from-[#007AFF] to-teal-400 font-thin "> 
+            <span key={index} className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-teal-400 font-thin "> 
             {part}<br/>
             </span>
           );}

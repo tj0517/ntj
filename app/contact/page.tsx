@@ -69,7 +69,7 @@ export default function ContactPage() {
               </div>
 
               
-              <a href="/calendar" rel="noopener noreferrer" className={`mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-linear-to-r from-blue-600/80 to-cyan-400/80 hover:scale-[1.02] hover:bg-linear-to-l active:scale-[0.98] transition-all duration-300`}>
+              <a href="/calendar" rel="noopener noreferrer" className={`mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-blue-600/80 to-cyan-400/80 hover:scale-[1.02] hover:bg-gradient-to-l active:scale-[0.98] transition-all duration-300`}>
 Darmowa Konsultacja
                 <Calendar className="w-5 h-5" />
               </a>

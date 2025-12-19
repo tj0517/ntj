@@ -57,7 +57,7 @@ export function ProjectBanner({ data }: { data?: ProjectData }) {
         `}
       >
         {/* Tło Grid (dekoracja) */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
+        <div className="absolute inset-0 bg-[gradient-gradient(to_right,#80808008_1px,transparent_1px),gradient-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
 
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-8">
           

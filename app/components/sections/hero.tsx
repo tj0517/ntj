@@ -22,7 +22,7 @@ export default function Hero({color='bg-[#007AFF]'}: HeroProps ) {
 />
     <h1 className="font-display font-bold text-4xl md:text-6xl wra leading-[1.1] mb-6 tracking-tight z-10 relative">
       Technologia rozwiązująca <br className="hidden md:block" /> 
-      <span className="text-transparent bg-clip-text bg-linear-to-r from-[#007AFF] to-teal-400 font-thin">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-teal-400 font-thin">
         problemy.
       </span>
     </h1>
@@ -33,12 +33,12 @@ export default function Hero({color='bg-[#007AFF]'}: HeroProps ) {
     </p>
 
     <div className="grid gird-cols-1 md:grid-cols-2 gap-4 text-xl z-10 relative">
-      <a href="/calendar" className="group px-8 py-4 bg-linear-to-br from-blue-500/70 via-blue-900 to-transparent backdrop-blur-xl border border-white/10 bg-white/5 hover:bg-blue-400 rounded-2xl text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(0,122,255,0.25)] hover:shadow-[0_0_30px_rgba(0,122,255,0.4)]">
+      <a href="/calendar" className="group px-8 py-4 bg-gradient-to-br from-blue-500/70 via-blue-900 to-transparent backdrop-blur-xl border border-white/10 bg-white/5 hover:bg-blue-400 rounded-2xl text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(0,122,255,0.25)] hover:shadow-[0_0_30px_rgba(0,122,255,0.4)]">
         Darmowa konsultacja
         {/* Zakładam, że masz zaimportowany ArrowRight */}
         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </a>
-      <a href="/projects" className="group px-8 py-4 bg-linear-to-br from-cyan-400/70 via-cyan-900/70 to-transparent backdrop-blur-sm border border-white/10 bg-white/5 hover:bg-cyan-400 rounded-2xl text-white font-medium flex items-center justify-center gap-2 transition-all backdrop-blur-sm">
+      <a href="/projects" className="group px-8 py-4 bg-gradient-to-br from-cyan-400/70 via-cyan-900/70 to-transparent backdrop-blur-sm border border-white/10 bg-white/5 hover:bg-cyan-400 rounded-2xl text-white font-medium flex items-center justify-center gap-2 transition-all backdrop-blur-sm">
         Jak działamy?
         {/* Zakładam, że masz zaimportowany ChevronRight */}
         <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-white" />

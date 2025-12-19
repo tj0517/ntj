@@ -33,7 +33,7 @@ const features = [
   return (
     <div className="">
       <main>
-     <Hero color="bg-linear-to-r from-blue-600/40 to-cyan-400/40"/>
+     <Hero color="bg-gradient-to-r from-blue-600/40 to-cyan-400/40"/>
      <div className="pt-96 pb-12 md:pb-20 w-full  overflow-clip bg-[#0A0A0A] border-y border-glass-border">
      <WhyUs features={features} />
      </div>

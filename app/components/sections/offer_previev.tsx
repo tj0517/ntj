@@ -35,7 +35,7 @@ const CoreStrategy = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         
         {/* === FILAR 1: INTERNAL OPS (DASHBOARD) === */}
-        <div className="group relative bg-linear-to-br from-blue-900/90 via-blue-950/40 to-black  rounded-2xl p-1 overflow-hidden h-[550px] flex flex-col transition-all hover:border-electric/30">
+        <div className="group relative bg-gradient-to-br from-blue-900/90 via-blue-950/40 to-black  rounded-2xl p-1 overflow-hidden h-[550px] flex flex-col transition-all hover:border-electric/30">
           {/* Efekt poświaty tła */}
           <div className="absolute inset-0 bg-gradient-to-br from-electric/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
           
@@ -118,7 +118,7 @@ const CoreStrategy = () => {
         </div>
 
         {/* === FILAR 2: EXTERNAL PERFORMANCE (LAPTOP) === */}
-        <div className="group relative bg-linear-to-bl from-cyan-600/90 via-cyan-950/40 to-black rounded-2xl p-1 overflow-hidden h-[550px] flex flex-col transition-all hover:border-teal/30">
+        <div className="group relative bg-gradient-to-bl from-cyan-600/90 via-cyan-950/40 to-black rounded-2xl p-1 overflow-hidden h-[550px] flex flex-col transition-all hover:border-teal/30">
           <div className="absolute inset-0 bg-gradient-to-bl from-teal/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
           
           <div className="relative z-10 p-6 md:p-8 flex flex-col h-full">
