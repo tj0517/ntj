@@ -37,7 +37,7 @@ const projects = [
       { label: "Load Time", value: "8.2s → 0.8s" },
     ],
     stack: ["Next.js", "Sanity CMS", "Tailwind", "Vercel"],
-    imageGradient: "from-teal-900/40 to-emerald-900/40",
+    imageGradient: "from-cyan-900/40 to-emerald-900/40",
     details: "Profesjonalny wizerunek wsparł negocjacje przy wygranym kontrakcie OZE. Architektura Headless pozwala na edycję Case Studies bez pomocy IT.",
     link: "https://seaclouds.eu",
   },
@@ -61,7 +61,7 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="bg-[#0A0A0A] min-h-screen text-white overflow-x-hidden">
-      <Hero tile="Engineering *Case Studies* & ROI" color="bg-indigo-600/40" />
+      <Hero tile="Nasze *podejście* oraz Realizacje" color="bg-indigo-600/40" />
       <div className="border-y-[0.5px] border-white/20">
         <EngineeringShowcase />
       </div>

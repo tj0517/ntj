@@ -217,7 +217,7 @@ useEffect(() => {
                     <span className="font-technical text-[#00C7BE] text-xs tracking-wider uppercase">Case Study</span>
                   </div>
 
-                  <h3 className={`text-2xl font-bold mb-6 text-pretty text text-transparent bg-clip-text ${selectedCase==="external" ? "bg-gradient-to-r" : "bg-gradient-to-l"} from-[#007AFF] to-teal-400`}>{currentCase.title}</h3>
+                  <h3 className={`text-2xl font-bold mb-6 text-pretty text text-transparent bg-clip-text ${selectedCase==="external" ? "bg-gradient-to-r" : "bg-gradient-to-l"} from-[#007AFF] to-cyan-400`}>{currentCase.title}</h3>
 
                   <div className="space-y-6">
                     <div>

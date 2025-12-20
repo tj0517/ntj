@@ -66,7 +66,7 @@ export const GridItem = ({ icon, title, description }: GridItemProps) => {
         <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl bg-zinc-900/80 p-6 ">
           <div className="relative flex flex-1 flex-col justify-start gap-4">
             
-            {/* Ikona w stylu "Internal Ops" (Gradient Teal) */}
+            {/* Ikona w stylu "Internal Ops" (Gradient cyan) */}
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00C7BE]/20 to-emerald-500/20 flex items-center justify-center border border-white/5">
               {icon}
             </div>

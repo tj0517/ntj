@@ -43,7 +43,7 @@ const CoreStrategy = () => {
             <div className="mb-6">
           <h3 className="text-2xl font-display font-bold text-white mb-2 flex items-center gap-2">
   Systemy ERP dla MŚP 
-  <span className="text-xs font-mono bg-teal-500/10 text-teal-400 px-2 py-0.5 rounded border border-teal-500/20">
+  <span className="text-xs font-mono bg-cyan-500/10 text-cyan-400 px-2 py-0.5 rounded border border-cyan-500/20">
     Dedykowany CRM 
   </span>
 </h3>
@@ -77,7 +77,7 @@ const CoreStrategy = () => {
                         <div className="text-[10px] font-mono text-gray-500 uppercase tracking-widest mb-1">Total Efficiency</div>
                         <div className="text-xl text-white font-bold font-mono">94.2%</div>
                     </div>
-                    <div className="px-2 py-0.5 bg-teal/10 text-teal text-[10px] rounded font-mono border border-teal/20">+14.2%</div>
+                    <div className="px-2 py-0.5 bg-cyan/10 text-cyan text-[10px] rounded font-mono border border-cyan/20">+14.2%</div>
                 </div>
                 <div className="flex-1 w-full min-h-[150px] relative">
                     <ResponsiveContainer width="100%" height="100%">
@@ -118,8 +118,8 @@ const CoreStrategy = () => {
         </div>
 
         {/* === FILAR 2: EXTERNAL PERFORMANCE (LAPTOP) === */}
-        <div className="group relative bg-gradient-to-bl from-cyan-600/90 via-cyan-950/40 to-black rounded-2xl p-1 overflow-hidden h-[550px] flex flex-col transition-all hover:border-teal/30">
-          <div className="absolute inset-0 bg-gradient-to-bl from-teal/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="group relative bg-gradient-to-bl from-cyan-600/90 via-cyan-950/40 to-black rounded-2xl p-1 overflow-hidden h-[550px] flex flex-col transition-all hover:border-cyan/30">
+          <div className="absolute inset-0 bg-gradient-to-bl from-cyan/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
           
           <div className="relative z-10 p-6 md:p-8 flex flex-col h-full">
             <div className="mb-6">
@@ -168,10 +168,10 @@ const CoreStrategy = () => {
 
                       {/* Overlay: PageSpeed Score */}
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-4 animate-in fade-in zoom-in duration-700">
-                        <div className="flex flex-col items-center justify-center bg-onyx/95 backdrop-blur-xl border border-teal/30 p-4 rounded-2xl shadow-[0_0_40px_rgba(0,199,190,0.15)] min-w-[100px]">
-                            <Gauge className="w-8 h-8 text-teal mb-2" />
+                        <div className="flex flex-col items-center justify-center bg-onyx/95 backdrop-blur-xl border border-cyan/30 p-4 rounded-2xl shadow-[0_0_40px_rgba(0,199,190,0.15)] min-w-[100px]">
+                            <Gauge className="w-8 h-8 text-cyan mb-2" />
                             <span className="text-4xl font-display font-bold text-white">99</span>
-                            <span className="text-[10px] uppercase tracking-widest text-teal mt-1 font-bold">PageSpeed</span>
+                            <span className="text-[10px] uppercase tracking-widest text-cyan mt-1 font-bold">PageSpeed</span>
                         </div>
                       </div>
                   </div>

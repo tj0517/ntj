@@ -20,8 +20,8 @@ export default function ContactPage() {
       
       {/* 1. HERO - Minimalistyczne */}
       <Hero 
-        tile="Start *Transformation* Contact Us" 
-        color={activeType === "internal" ? "bg-teal-600/30" : "bg-blue-600/30"} 
+        tile="Rozpocznij *dziś* umów konsultację" 
+        color={activeType === "internal" ? "bg-cyan-600/30" : "bg-blue-600/30"} 
       />
 
       <section className="py-20  relative z-10 border-y-[0.5px] border-white/20">
@@ -107,7 +107,7 @@ Darmowa Konsultacja
                   onClick={() => setActiveType("internal")}
                   className={`p-4 rounded-xl border text-left transition-all duration-300 ${
                     activeType === "internal" 
-                      ? "bg-teal-600/10 border-teal-500 text-white" 
+                      ? "bg-cyan-600/10 border-cyan-500 text-white" 
                       : "bg-transparent border-white/10 text-gray-500 hover:border-white/30"
                   }`}
                 >

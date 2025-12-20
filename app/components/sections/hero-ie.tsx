@@ -1,3 +1,6 @@
+import { TextAnimate } from "@/components/ui/text-animate";
+import { TypingAnimation } from "@/components/ui/typing-animation";
+import React from 'react';
 
 
 
@@ -20,18 +23,31 @@ export default function Hero({tile, color='bg-blue-600/40'}: HeroProps) {
     borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' 
   }}
 /> 
-    <h1 className="font-display font-bold text-4xl md:text-6xl leading-[1.1] mb-6 tracking-tight z-10 relative">
-        {parts.map((part, index) => {
-        // Jeśli indeks jest nieparzysty (1, 3...), to znaczy, że był w gwiazdkach
-        if (index % 2 === 1) {
-          return (
-            <span key={index} className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-cyan-400 font-thin "> 
-            {part}<br/>
-            </span>
-          );}
-          return <span key={index}>{part}</span>;
-      })}
-    </h1> 
+<h1 className="font-display font-bold text-4xl md:text-6xl leading-[1.1] mb-6 tracking-tight z-10 relative">
+  {parts.map((part, index) => {
+    // Jeśli indeks jest nieparzysty (część wyróżniona)
+    if (index % 2 === 1) {
+      return (
+        // Przenosimy key={index} do Fragmentu, bo to teraz główny kontener
+        <React.Fragment key={index}>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-cyan-400 font-thin">
+            <TypingAnimation delay={500}>{part}</TypingAnimation>
+          </span>
+          <br /> 
+        </React.Fragment>
+      );
+    }
+    
+    // Zwykła część tekstu3
+    return (
+      <span key={index} className="inline-block">
+        <TextAnimate delay={0.7*index}  className="mb-3" animation="slideUp" by="word">
+          {part}
+        </TextAnimate>
+      </span>
+    );
+  })}
+</h1>
   </div>
 </div>
   );
