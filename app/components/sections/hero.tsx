@@ -22,7 +22,7 @@ export default function Hero({color='bg-[#007AFF]'}: HeroProps ) {
 />
     <h1 className="font-display font-bold text-4xl md:text-6xl wra leading-[1.1] mb-6 tracking-tight z-10 relative">
       Technologia rozwiązująca <br className="hidden md:block" /> 
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-teal-400 font-thin">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-cyan-400 font-thin">
         problemy.
       </span>
     </h1>

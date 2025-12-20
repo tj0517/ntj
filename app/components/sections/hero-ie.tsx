@@ -9,7 +9,7 @@ interface HeroProps {
 export default function Hero({tile, color='bg-blue-600/40'}: HeroProps) {
     const parts = tile.split("*");
   return (
-  <div className="bg-[#0A0A0A] flex flex-col  text-white pb-18 overflow-clip">
+  <div className="bg-[#0A0A0A] flex flex-col  text-white pb-20 overflow-clip">
   
   {/* Sekcja Hero */}
   <div className="w-2/3  relative mx-auto mt-36 md:mt-44 text-center flex flex-col items-center justify-center">
@@ -25,7 +25,7 @@ export default function Hero({tile, color='bg-blue-600/40'}: HeroProps) {
         // Jeśli indeks jest nieparzysty (1, 3...), to znaczy, że był w gwiazdkach
         if (index % 2 === 1) {
           return (
-            <span key={index} className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-teal-400 font-thin "> 
+            <span key={index} className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-cyan-400 font-thin "> 
             {part}<br/>
             </span>
           );}
