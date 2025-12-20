@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Calendar, ArrowRight, CheckCircle2, Linkedin } from "lucide-react";
+import { Mail, MapPin, Calendar, ArrowRight, CheckCircle2, Linkedin, Contact } from "lucide-react";
 import Hero from "../components/sections/hero-ie";
+import { ContactForm } from "./form";
 
 export default function ContactPage() {
   // Stan do zarządzania "trybem" formularza (internal vs external)
@@ -86,80 +87,7 @@ Darmowa Konsultacja
             {/* Tło zmieniające kolor w zależności od wyboru */}
             <div className={`absolute top-0 right-0 w-64 h-64 ${activeBg} opacity-10 blur-[100px] pointer-events-none transition-colors duration-700`} />
 
-            <form className="relative space-y-6">
-              
-              {/* Wybór ścieżki (Internal / External) */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <button
-                  type="button"
-                  onClick={() => setActiveType("external")}
-                  className={`p-4 rounded-xl border text-left transition-all duration-300 ${
-                    activeType === "external" 
-                      ? "bg-blue-600/10 border-blue-500 text-white" 
-                      : "bg-transparent border-white/10 text-gray-500 hover:border-white/30"
-                  }`}
-                >
-                  <div className="font-bold text-sm mb-1">Wizerunek</div>
-                  <div className="text-xs opacity-70">Marketing & Technologia</div>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setActiveType("internal")}
-                  className={`p-4 rounded-xl border text-left transition-all duration-300 ${
-                    activeType === "internal" 
-                      ? "bg-cyan-600/10 border-cyan-500 text-white" 
-                      : "bg-transparent border-white/10 text-gray-500 hover:border-white/30"
-                  }`}
-                >
-                  <div className="font-bold text-sm mb-1">Optymalizacja</div>
-                  <div className="text-xs opacity-70">Systemy & Logika</div>
-                </button>
-              </div>
-
-              {/* Pola formularza */}
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-xs font-mono text-gray-500 uppercase mb-2">Imię i Nazwisko</label>
-                  <input 
-                    type="text" 
-
-                    className={`w-full bg-black/50 border border-white/10 rounded-xl p-4 text-white placeholder:text-gray-700 focus:outline-none focus:ring-1 focus:ring-transparent transition-all duration-300 ${activeBorder}`}
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-xs font-mono text-gray-500 uppercase mb-2">Email Firmowy</label>
-                  <input 
-                    type="email" 
-
-                    className={`w-full bg-black/50 border border-white/10 rounded-xl p-4 text-white placeholder:text-gray-700 focus:outline-none focus:ring-1 focus:ring-transparent transition-all duration-300 ${activeBorder}`}
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-mono text-gray-500 uppercase mb-2">Opisz wyzwanie</label>
-                  <textarea 
-                    rows={4}
-                    className={`w-full bg-black/50 border border-white/10 rounded-xl p-4 text-white placeholder:text-gray-700 focus:outline-none focus:ring-1 focus:ring-transparent transition-all duration-300 ${activeBorder}`}
-                  />
-                </div>
-              </div>
-
-              {/* Submit Button */}
-              <button 
-                type="submit"
-                className={` w-full overflow-clip py-4 mt-4 rounded-xl font-bold text-white flex items-center justify-center gap-2 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] relative `}
-              >
-                <div className={`absolute  -top-20 -left-12 blur-xl w-32 h-32 rounded-full opacity-30 pointer-events-none ${activeBg}`}></div>
-                <div className={`absolute -bottom-20 -right-12 blur-xl w-32 h-32 rounded-full opacity-30 pointer-events-none ${activeBg}`}></div>
-                Wyślij Zgłoszenie <ArrowRight className="w-5 h-5" />
-              </button>
-              
-              <div className="flex items-center justify-center gap-2 text-xs text-gray-500 mt-4">
-                <CheckCircle2 className="w-3 h-3" /> Odpisujemy w max. 24h
-              </div>
-
-            </form>
+           <ContactForm/>
           </motion.div>
         </div>
       </section>
