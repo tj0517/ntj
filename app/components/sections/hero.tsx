@@ -35,10 +35,10 @@ const fadeUpVariants = {
 />
 
     <h1 className="font-display font-bold text-4xl md:text-6xl  mb-6 tracking-tight z-10 relative">
- <TextAnimate className="mb-3"  animation="slideUp" by="word">
+ <TextAnimate className="md:mb-3"  animation="slideUp" by="word">
       Technologia rozwiązująca 
       </TextAnimate>
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-cyan-400 font-thin">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007AFF] to-cyan-400 font-thin translate-y-[-10px] inline-block">
         <TypingAnimation delay={500}>problemy.</TypingAnimation>
       </span>
     </h1>

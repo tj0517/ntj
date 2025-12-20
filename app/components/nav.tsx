@@ -26,11 +26,11 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full transition-all duration-500 ease-out ${
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] md:w-full  ease-out ${
         isScrolled
           ? "max-w-3xl bg-zinc-900/80 shadow-[0_0_20px_rgba(0,122,255,0.15)]"
           : "max-w-4xl bg-zinc-900/50 shadow-none"
-      } backdrop-blur-xl rounded-full border border-white/10`}
+      } backdrop-blur-xl ${isMobileMenuOpen ? "rounded-3xl":"rounded-full" } border border-white/10`}
     >
       <div className="flex items-center justify-between px-6 py-3">
         {/* Logo */}
@@ -56,9 +56,9 @@ export function Navbar() {
 
         {/* Primary Action Button */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="rounded-full bg-gradient-to-r from-blue-600/80 to-cyan-400/80   text-white text-sm font-medium px-6 py-2 transition-all duration-500 hover:bg-gradient-to-l   shadow-[0_0_15px_rgba(0,122,255,0.3)] hover:shadow-[0_0_25px_rgba(0,122,255,0.5)]">
+          <a href="/calendar" className="rounded-full bg-gradient-to-r from-blue-600/80 to-cyan-400/80   text-white text-sm font-medium px-6 py-2 transition-all duration-500 hover:bg-gradient-to-l   shadow-[0_0_15px_rgba(0,122,255,0.3)] hover:shadow-[0_0_25px_rgba(0,122,255,0.5)]">
             Darmowa konsultacja
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -73,7 +73,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-white/10 px-6 py-4 animate-in fade-in slide-in-from-top-2 duration-300">
+        <div className="md:hidden border-t border-white/10 px-6 py-4 animate-in fade-in slide-in-from-top-2 duration-300 ">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
@@ -85,12 +85,12 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <button
-              className="rounded-full bg-[#007AFF] text-white font-medium w-full py-3 mt-2 shadow-[0_0_20px_rgba(0,122,255,0.2)]"
+            <a href="/calendar"
+              className="w-1/2 mx-auto text-center rounded-full bg-gradient-to-r from-blue-600/80 to-cyan-400/80 text-white font-medium  py-3 mt-2 shadow-[0_0_20px_rgba(0,122,255,0.2)]"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       )}

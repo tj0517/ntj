@@ -64,7 +64,7 @@ export const WhyUs = ({ features }: { features: FeatureItem[] }) => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group relative py-8 md:py-12 md:px-8 first:pl-0 last:pr-0 flex flex-col items-start transition-all duration-300 hover:bg-white/[0.02] rounded-xl"
+              className="group relative py-8 md:py-12 md:px-8 first:pl-0 last:pr-0 flex flex-col items-start transition-all duration-300  rounded-xl"
             >
               {/* Ikona */}
               <div className={`mb-6 p-0 transition-transform duration-300 group-hover:-translate-y-1 ${item.color}`}>
